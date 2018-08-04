@@ -32,14 +32,18 @@ function walk(node)
 	}
 }
 
+function getNick(){
+	var jorp = ["Jorp", "Jordy-P", "J. Peeperson", "Jordgie Porgie", "the oldest man named Jordan"]
+	
+	var index = Math.floor(Math.random() * jorp.length)
+	return jorp[index]
+}
+
 function handleText(textNode) 
 {
 	var v = textNode.nodeValue;
 
-	v = v.replace(/\bThe Cloud\b/g, "My Butt");
-	v = v.replace(/\bThe cloud\b/g, "My butt");
-	v = v.replace(/\bthe Cloud\b/g, "my Butt");
-	v = v.replace(/\bthe cloud\b/g, "my butt");
+	v = v.replace(/\bJordan Peterson\b/g, getNick());
 	
 	textNode.nodeValue = v;
 }
