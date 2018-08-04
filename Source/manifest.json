@@ -1,8 +1,8 @@
 {
 	"manifest_version": 2,
-	"name": "Cloud To Butt",
+	"name": "Jordan to Jorp",
 	"version": "1.0",
-	"description": "Replaces the text 'the cloud' with 'my butt'.",
+	"description": "Replaces the text 'Jordan Peterson' with an amusing diminutive.",
 	"content_scripts": 
 	[
 		{
