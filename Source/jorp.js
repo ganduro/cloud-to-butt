@@ -31,7 +31,7 @@ function walk(node)
 
 function getJorp() {
 
-	var jorp = ["Jorp", "Jordy-P", "J. Peeperson", "Jordgie Porgie", "the oldest man named Jordan"]
+	var jorp = ["Jorp", "Jorp!", "JPee", "Kermit the Fraud", "an anhedonic frog", "Lobsterman", "Jurassic Parkinson", "\"Air Jordan\" Peterson", "Jordan \"Bee Movie\" Peterson", "Jordan, son of Peter", "Porbo Jeterson", "Jordy-P", "J. Peeperson", "Jordgie Porgie", "the oldest man named Jordan"]
 	
 	var index = Math.floor(Math.random() * jorp.length)
 	return jorp[index]
@@ -42,8 +42,14 @@ function handleText(textNode)
 	var v = textNode.nodeValue;
 
 	v = v.replace(/\bJordan Peterson\b/g, getJorp());
+	v = v.replace(/\bjordan peterson\b/g, getJorp());
 	v = v.replace(/\bJordan B Peterson\b/g, getJorp());
+	v = v.replace(/\bjordan b peterson\b/g, getJorp());
+	v = v.replace(/\bJordan B. Peterson\b/g, getJorp());
+	v = v.replace(/\bjordan b. peterson\b/g, getJorp());
 	v = v.replace(/\bJordan Bernt Peterson\b/g, getJorp());
+	v = v.replace(/\bjordan bernt peterson\b/g, getJorp());
+	v = v.replace(/\bJordan_Peterson\b/g, getJorp());
 	
 	textNode.nodeValue = v;
 }
