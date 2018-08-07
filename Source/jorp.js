@@ -31,7 +31,7 @@ function walk(node)
 
 function getJorp() {
 
-	var jorp = ["Jorp", "Jorp!", "JPee", "Kermit the Fraud", "an anhedonic frog", "Lobsterman", "Jurassic Parkinson", "\"Air Jordan\" Peterson", "Jordan, son of Peter", "Porbo Jeterson", "Jordy-P", "J. Peeperson", "Jordgie Porgie", "the oldest man named Jordan"]
+	var jorp = ["Jorp", "Jorp!", "JPee", "Kermit the Fraud", "an anhedonic frog", "Lobster Daddy", "Lobsterman", "Jurassic Parkinson", "\"Air Jordan\" Peterson", "Jordan, son of Peter", "Porbo Jeterson", "Jordy-P", "J. Peeperson", "Jordgie Porgie", "the oldest man named Jordan"]
 	
 	var index = Math.floor(Math.random() * jorp.length)
 	return jorp[index]
